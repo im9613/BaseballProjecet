@@ -29,13 +29,15 @@
 						<div class="content">
 							<div class="inner">
 								<h1>안녕하세요</h1>
-								<p>2024-11-01 금요일</p><p>현재시각 23시 48분</p><p>날씨: 흐림 입니다.</p>
+								<h3><%= new java.text.SimpleDateFormat("yyyy-MM-dd E요일").format(new java.util.Date()) %></h3>
+								<h3>날씨: 맑음 입니다.</h3>
+
 							</div>
 						</div>
 						<nav>
 							<ul>
 								<li><a href="#intro">result</a></li>
-								<li><a href="#work">team</a></li>
+								<li><a href="#team">team</a></li>
 								<li><a href="#about">detail</a></li>
 								<li><a href="#contact">login</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
@@ -49,13 +51,87 @@
 						<!-- Intro -->
 							<article id="intro">
 								<h2 class="major">result</h2>
-								<span class="image main"><img src="resources/images/pic01.jpg" alt="" /></span>
-								<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#work">awesome work</a>.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
+								<span class="image main">
+								<table>
+									<tr id="socrehead">
+										<th>
+											<td>1회</td>
+											<td>2회</td>
+											<td>3회</td>
+											<td>4회</td>
+											<td>5회</td>
+											<td>6회</td>
+											<td>7회</td>
+											<td>8회</td>
+											<td>9회</td>
+										</th>
+										<tr>
+											<th>삼성</th>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>3</td>
+											<td>2</td>
+											<td>0</td>
+											<td>1</td>
+										</tr>
+										<tr>
+											<th>KIA</th>
+											<td>3</td>
+											<td>0</td>
+											<td>0</td>
+											<td>3</td>
+											<td>0</td>
+											<td>5</td>
+											<td>1</td>
+											<td>0</td>
+											<td>0</td>
+										</tr>
+									</tr>
+									<tr id="socrehead">
+										<th>
+											<td>1회</td>
+											<td>2회</td>
+											<td>3회</td>
+											<td>4회</td>
+											<td>5회</td>
+											<td>6회</td>
+											<td>7회</td>
+											<td>8회</td>
+											<td>9회</td>
+										</th>
+										<tr>
+											<th>삼성</th>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>3</td>
+											<td>2</td>
+											<td>0</td>
+											<td>1</td>
+										</tr>
+										<tr>
+											<th>한화</th>
+											<td>3</td>
+											<td>0</td>
+											<td>0</td>
+											<td>3</td>
+											<td>0</td>
+											<td>5</td>
+											<td>1</td>
+											<td>0</td>
+											<td>0</td>
+										</tr>
+									</tr>
+								</table>
 							</article>
 
 						<!-- Work -->
-							<article id="work">
+							<article id="team">
 								<h2 class="major">team<img src="resources/images/samsung.svg" alt="" /></h2>
 								<span class="image main"></span>
 								<table>
@@ -71,7 +147,7 @@
 										<td>WAR</td>
 									</tr>
 									<tr>
-										<td>김두한</td>
+										<td><a href="playerinfo.jsp">김두한</a></td>
 										<td>54</td>
 										<td>43</td>
 										<td>12</td>
@@ -82,7 +158,7 @@
 										<td>3.7</td>
 									</tr>
 									<tr>
-										<td>김두한</td>
+										<td><a href="playerinfo.jsp">김원빈</a></td>
 										<td>54</td>
 										<td>43</td>
 										<td>12</td>
@@ -93,7 +169,7 @@
 										<td>3.7</td>
 									</tr>
 									<tr>
-										<td>김두한</td>
+										<td><a href="playerinfo.jsp">최정원</a></td>
 										<td>54</td>
 										<td>43</td>
 										<td>12</td>
@@ -104,7 +180,7 @@
 										<td>3.7</td>
 									</tr>
 									<tr>
-										<td>김두한</td>
+										<td><a href="playerinfo.jsp">김민수</a></td>
 										<td>54</td>
 										<td>43</td>
 										<td>12</td>
@@ -115,7 +191,7 @@
 										<td>3.7</td>
 									</tr>
 									<tr>
-										<td>김두한</td>
+										<td><a href="playerinfo.jsp">김용규</a></td>
 										<td>54</td>
 										<td>43</td>
 										<td>12</td>
@@ -126,7 +202,7 @@
 										<td>3.7</td>
 									</tr>
 									<tr>
-										<td>김두한</td>
+										<td><a href="playerinfo.jsp">이상태</td>
 										<td>54</td>
 										<td>43</td>
 										<td>12</td>
@@ -153,11 +229,11 @@
 									<div class="fields">
 										<div class="field half">
 											<label for="name">아이디</label>
-											<input type="text" name="name" id="name" />
+											<input type="text" name="id" id="id" />
 										</div>
 										<div class="field half">
-											<label for="email">비밀번호</label>
-											<input type="text" name="email" id="email" />
+											<label for="password">비밀번호</label>
+											<input type="password" name="pw" id="pw" />
 										</div>
 									</div>
 									<ul class="actions">
